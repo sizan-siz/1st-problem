@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  double num1,num2,mul,sum,sub,div;
+  int choice,mod;
+  cout<<"======================\n";
+  cout<<"1.for summation:      |"<<endl;
+  cout<<"2.for subtraction:    |"<<endl;
+  cout<<"3.for multiplaction:  |"<<endl;
+  cout<<"4.for divition:       |"<<endl;
+  cout<<"5.for modulation:     |"<<endl;
+  cout<<"======================\n";
+  cout<<"Enter your choice:\n";
+  cin>>choice;
+  cout<<"Enter 1st number:"<<endl;
+  cin>>num1;
+  cout<<"Enter 2nd number:"<<endl;
+  cin>>num2;
+  switch (choice)
+  {
+  case 1:
+  sum=num1+num2;
+   cout<<"Summation is :"<<sum;
+    break;
+     case 2:
+     sub=num1-num2;
+   cout<<"Subtraction is :"<<sub;
+    break;
+     case 3:
+     mul=num1*num2;
+   cout<<"Multiplication is :"<<mul;
+    break;
+     case 4:
+     div=num1/num2;
+   cout<<"Divition is :"<<div;
+    break;
+     case 5:
+     mod=(int)num1%(int)num2;
+   cout<<"Moduls is :"<<mod;
+    break;
+  
+  default:
+  cout<<"Invalide input !!!!!!!!!!";
+    break;
+  }
+
+}
